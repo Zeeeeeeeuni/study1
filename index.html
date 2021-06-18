@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        .notice
+        {
+            display: none;
+        }   
+        .notice_background
+        {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            z-index: 2;
+            opacity: 0.3;
+        }
+        .notice_border
+        {
+            position:relative;
+            top: 22vh;
+            margin: 0 auto;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255,255,255);
+            z-index: 3;
+        }
+        
+        @media all and (max-width: 1280px)
+        {
+            .header .nav .menu2
+            {
+                display : none;
+            }
+            .header .nav .menu3
+            {
+                display : none;
+            }
+            .header .nav .menu4
+            {
+                display : none;
+            }
+            .header .nav .menu5
+            {
+                display : none;
+            }
+        }
+        @media all and (min-width: 1280px)
+        {
+            
+        }
+        /* .main .section1 .img1:hover
+        {
+            transform: scale(0.7);
+            transition-delay: 0.5s;
+            transition-duration: 3s;
+        } */
+        .main .section1 .img1
+        {
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes myanimation{
+            from{
+                margin-left: 0px;
+            }
+            50%{
+                margin-left:250px;
+            }   
+            to{
+                margin-left: 0px;
+            }
+        }
+        .main .section4 .table
+        {
+            border-collapse: collapse;
+            text-align: center;
+            line-height: 1.5;
+            border-top: 2px solid rgb(255, 255, 255);
+            border-bottom: 2px solid rgb(255, 255, 255);
+            margin: 20px 10px;
+            
+        }
+        .main .section4 .table thead th {
+            width: 150px;
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: top;
+            color: rgb(255, 255, 255);
+            border-bottom: 3px solid rgb(255, 255, 255);
+            background: #e7708d;
+            margin: 20px 10px;
+        }
+        .main .section4 .table tbody th {
+            width: 150px;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .main .section4 .table td {
+            width: 350px;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .main .section4 .table .even {
+            background: #efefef;
+        }
+        .main .section4 .table .even .name{
+            text-align: center;
+        }
+                  
+
+
+    </style>
+ </head>
+
+<body>
+    <header class="header" style="/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#96d8cc+0,619990+100 */
+    background: #96d8cc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #96d8cc 0%, #619990 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #96d8cc 0%,#619990 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #96d8cc 0%,#619990 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d8cc', endColorstr='#619990',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */">
+        <nav class="nav">
+            <a href="main.html"><div class="menu1">QA</div></a>
+            <a href="App.html" style="color: black;" target="_blank"><div class="menu2">앱 app </div></a>
+            <a href="Web.html" style="color: black;"><div class="menu3">웹 Web</div></a>
+            <a href="Tablet.html" style="color: black;"><div class="menu4">Tablet </div></a>
+            <a href="Idk.html" style="color: black;"><div class="menu5">아 몰랑</div></a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="notice">
+            <div class="notice_background" ></div>
+            <div style="position: absolute; width: 100%">
+                <div class="notice_border">공지사항</div>
+            </div>
+        </section>
+        <section class="section1"><img src="img/travel.jpeg" class="img1" alt=""></section>
+        <section class="section2">
+            <div class="text1" style="letter-spacing: 15px;">나도 잘하고 싶다~!</div>
+            <div class="img2"></div>
+            <div class="text2">
+                <div style="font-size: 14pt; font-weight: 700; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#38edd8+0,887ded+54,ff0084+100 */
+                background: #38edd8; /* Old browsers */
+                background: -moz-linear-gradient(-45deg, #38edd8 0%, #887ded 54%, #ff0084 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, #38edd8 0%,#887ded 54%,#ff0084 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg, #38edd8 0%,#887ded 54%,#ff0084 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38edd8', endColorstr='#ff0084',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */">
+                Tabling QA의 자동화 테스트 페이지 입니다.</div>
+                <div style="line-height: 30px;">여러가지 자동화 테스트를 해볼 예정입니다</br>
+                </div>
+                <div>두구두구두구두구두구</div>
+                <div>위에 사진이랑 아무 관련 없음...ㅎㅎ</div>
+            </div>
+        </section>
+        
+        <section class="section4">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="row">No.</th>
+                    <th>서비스</th>
+                    <th>테스트 디바이스</th>
+                    <th>문서</th>
+                    <th>실행</th>
+                    <th>상태</th>
+                    <th>진행률</th>
+                    <th>최근 실행일</th>
+                    <th>담당자</th>
+                    <th>편집</th>
+                    <th>결과</th>
+                    <th>불러오기</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="even">
+                    <th scope="row">1</th>
+                    <td style="width: 120px;">유저타입 AOS</td>
+                    <td>
+                        <select name="select_AOS" id="" style="width: 120px;">
+                            <option value="AOS_device">테스트기기 선택</option>
+                            <option value="AOS_device1">Galaxy Note 4</option>
+                            <option value="AOS_device2">Galaxy Note 5</option>
+                            <option value="AOS_device3">LG G6</option>
+                            <option value="AOS_device4">Galaxy Fold </option>
+                            <option value="AOS_device5">Galaxy Z flip</option>
+                            <option value="AOS_device6">Galaxy S20</option>
+                            <option value="AOS_device7">Galaxy S21</option>
+                       </select>
+
+                    </td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="AOS_QA">담당자 선택</option>
+                            <option value="AOS_QA1">이지은</option>
+                            <option value="AOS_QA2">유현승</option>
+                            <option value="AOS_QA3">양소현</option>
+                            <option value="AOS_QA4">진영근</option>
+                            <option value="AOS_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>유저타입 IOS</td>
+                    <td>
+                        <select name="select_iOS" id="" style="width: 120px;">
+                        <option value="iOS_device">테스트기기 선택</option>
+                        <option value="iOS_device1">iPhone SE2</option>
+                        <option value="iOS_device2">iPhone6</option>
+                        <option value="iOS_device3">iPhone 7+</option>
+                        <option value="iOS_device4">iPhone 11 Pro</option>
+                        <option value="iOS_device5">iPhone 11 Pro Max</option>
+                        <option value="iOS_device6">iPhone 12</option>
+                        <option value="iOS_device7">iPhone 12 Pro</option>
+                   </select>
+                    </td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="IOS_QA">담당자 선택</option>
+                            <option value="IOS_QA1">이지은</option>
+                            <option value="IOS_QA2">유현승</option>
+                            <option value="IOS_QA3">양소현</option>
+                            <option value="IOS_QA4">진영근</option>
+                            <option value="IOS_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr class="even">
+                    <th>3</th>
+                    <td>유저타입 WEB</td>
+                    <td>Chrome</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="WEB_QA">담당자 선택</option>
+                            <option value="WEB_QA1">이지은</option>
+                            <option value="WEB_QA2">유현승</option>
+                            <option value="WEB_QA3">양소현</option>
+                            <option value="WEB_QA4">진영근</option>
+                            <option value="WEB_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>사장님보드</td>
+                    <td>Firefox</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="CEO_QA">담당자 선택</option>
+                            <option value="CEO_QA1">이지은</option>
+                            <option value="CEO_QA2">유현승</option>
+                            <option value="CEO_QA3">양소현</option>
+                            <option value="CEO_QA4">진영근</option>
+                            <option value="CEO_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr class="even">
+                    <th>5</th>
+                    <td>테이블링 호출(WD)</td>
+                    <td>Chrome</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="Call_QA">담당자 선택</option>
+                            <option value="Call_QA1">이지은</option>
+                            <option value="Call_QA2">유현승</option>
+                            <option value="Call_QA3">양소현</option>
+                            <option value="Call_QA4">진영근</option>
+                            <option value="Call_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>테이블링 접수(W2)</td>
+                    <td>Chrome</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="W2_QA">담당자 선택</option>
+                            <option value="W2_QA1">이지은</option>
+                            <option value="W2_QA2">유현승</option>
+                            <option value="W2_QA3">양소현</option>
+                            <option value="W2_QA4">진영근</option>
+                            <option value="W2_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr class="even">
+                    <th>7</th>
+                    <td>테이블링 보드(B2)</td>
+                    <td>Lenover</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="B2_QA">담당자 선택</option>
+                            <option value="B2_QA1">이지은</option>
+                            <option value="B2_QA2">유현승</option>
+                            <option value="B2_QA3">양소현</option>
+                            <option value="B2_QA4">진영근</option>
+                            <option value="B2_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td>알림톡</td>
+                    <td>Web</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="Alim_QA">담당자 선택</option>
+                            <option value="Alim_QA1">이지은</option>
+                            <option value="Alim_QA2">유현승</option>
+                            <option value="Alim_QA3">양소현</option>
+                            <option value="Alim_QA4">진영근</option>
+                            <option value="Alim_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr class="even">
+                    <th>9</th>
+                    <td style="width: 700px;">테이블링 광고센터</td>
+                    <td>Web</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="Adv_QA">담당자 선택</option>
+                            <option value="Adv_QA1">이지은</option>
+                            <option value="Adv_QA2">유현승</option>
+                            <option value="Adv_QA3">양소현</option>
+                            <option value="Adv_QA4">진영근</option>
+                            <option value="Adv_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>API</td>
+                    <td>Web</td>
+                    <td>문서</td>
+                    <td>실행</td>
+                    <td>상태</td>
+                    <td>80%</td>
+                    <td>
+                        <form name="date" method="post" >
+                        <input type="date" name='test_date' style="width: 140px;">
+                        </form>
+                    </td>
+                    <td calss="name">
+                        <select name="name" id="" style="width: 120px;">
+                            <option value="API_QA">담당자 선택</option>
+                            <option value="API_QA1">이지은</option>
+                            <option value="API_QA2">유현승</option>
+                            <option value="API_QA3">양소현</option>
+                            <option value="API_QA4">진영근</option>
+                            <option value="API_QA5">막내님</option>
+                       </select>
+                    </td>
+                    <td>편집</td>
+                    <td>PASS</td>
+                    <td>불러오기</td>
+                </tr>
+                </tbody>
+            </table>    
+        </section>
+        <section class="section3">
+            <form action="main2.html">
+                <div><label>이 름 : </label><input type="text"></div>
+                <div><label>휴대폰번호 : </label><input type="text"></div>
+                <div><label>인증번호번호 : </label><input type="text"></div>
+                <br/>
+                <div><input type="submit" value="찾아랏"></div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    
+    
+
+</body>
+</html>
